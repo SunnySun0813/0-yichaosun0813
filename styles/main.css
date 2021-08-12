@@ -3680,14 +3680,14 @@ body {
   outline: 0;
 }
 
-img {
+img, video {
   max-width: 100%;
   border-radius: 1px;
 }
 
-.img-raised {
-  -webkit-box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.3);
-          box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.3);
+.img-raised, video-raised {
+    -webkit-box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.3);
 }
 
 .popover {
@@ -4628,8 +4628,12 @@ Created using IcoMoon - icomoon.io
   min-height: 10px;
 }
 
+#fixheight {
+    min-height: 200px;
+}
+
 .card[data-background-color="orange"] {
-  background-color: #378C3F;
+    background-color: #378C3F;
 }
 
 .card[data-background-color="red"] {
@@ -4807,6 +4811,10 @@ Created using IcoMoon - icomoon.io
   max-width: 100px;
 }
 
+.landing-page .section-team .team .team-player video {
+    max-width: 100px;
+}
+
 .landing-page .section-team .team-player {
   margin-bottom: 15px;
 }
@@ -4896,6 +4904,10 @@ Created using IcoMoon - icomoon.io
   margin-bottom: 30px;
 }
 
+.profile-page .collections video {
+    margin-bottom: 30px;
+}
+
 .profile-page .gallery {
   margin-top: 45px;
   padding-bottom: 50px;
@@ -4976,6 +4988,10 @@ Created using IcoMoon - icomoon.io
 }
 
 .login-page .card-login .logo-container img {
+  width: 100%;
+}
+
+.login-page .card-login .logo-container video {
   width: 100%;
 }
 
@@ -5259,6 +5275,14 @@ Created using IcoMoon - icomoon.io
   top: 0;
   height: 100%;
   position: absolute;
+}
+
+.section-nucleo-icons .nucleo-container video {
+    width: auto;
+    left: 0;
+    top: 0;
+    height: 100%;
+    position: absolute;
 }
 
 .section-nucleo-icons .nucleo-container {
@@ -6883,6 +6907,13 @@ Created using IcoMoon - icomoon.io
   opacity: 1;
 }
 
+.gallery .cc-porfolio-image figure video {
+  position: relative;
+  display: block;
+  max-width: 100%;
+  opacity: 1;
+}
+
 .gallery .cc-porfolio-image figure figcaption {
   position: absolute;
   color: #fff;
@@ -6974,26 +7005,27 @@ Created using IcoMoon - icomoon.io
   opacity: 0;
 }
 
-.gallery figure.cc-effect img,
+.gallery figure.cc-effect img, .gallery figure.cc-effect video,
 .gallery figure.cc-effect .h4 {
-  -webkit-transform: scale(1.06, 1.06);
-  transform: scale(1.06, 1.06);
+    -webkit-transform: scale(1.06, 1.06);
+    transform: scale(1.06, 1.06);
 }
 
 .gallery figure.cc-effect img,
+.gallery figure.cc-effect video,
 .gallery figure.cc-effect figcaption::before,
 .gallery figure.cc-effect figcaption::after,
 .gallery figure.cc-effect p {
-  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-  transition: opacity 0.35s, -webkit-transform 0.35s;
-  transition: opacity 0.35s, transform 0.35s;
-  transition: opacity 0.35s, transform 0.35s, -webkit-transform 0.35s;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s, -webkit-transform 0.35s;
 }
 
-.gallery figure.cc-effect:hover img {
-  opacity: 1;
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
+.gallery figure.cc-effect:hover img, .gallery figure.cc-effect:hover video {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
 }
 
 .gallery figure.cc-effect:hover figcaption::before,
@@ -7019,9 +7051,10 @@ Created using IcoMoon - icomoon.io
 .gallery figure.cc-effect:hover figcaption::after,
 .gallery figure.cc-effect:hover .h4,
 .gallery figure.cc-effect:hover p,
-.gallery figure.cc-effect:hover img {
-  -webkit-transition-delay: 0.15s;
-  transition-delay: 0.15s;
+.gallery figure.cc-effect:hover img,
+.gallery figure.cc-effect:hover video {
+    -webkit-transition-delay: 0.15s;
+    transition-delay: 0.15s;
 }
 
 /* Header */
@@ -7100,22 +7133,22 @@ Created using IcoMoon - icomoon.io
   z-index: 99;
 }
 
-.cc-profile-image img {
-  position: relative;
-  border-radius: 50%;
-  height: 180px;
-  width: 180px;
-  padding: 0;
-  margin: 0;
-  border: 15px solid transparent;
-  z-index: 9999;
-  -webkit-transition: all .3s ease-out;
-  transition: all .3s ease-out;
+.cc-profile-image img, .cc-profile-image video {
+    position: relative;
+    border-radius: 50%;
+    height: 180px;
+    width: 180px;
+    padding: 0;
+    margin: 0;
+    border: 15px solid transparent;
+    z-index: 9999;
+    -webkit-transition: all .3s ease-out;
+    transition: all .3s ease-out;
 }
 
-.cc-profile-image a:hover img {
-  -webkit-transform: scale(1.06, 1.06);
-          transform: scale(1.06, 1.06);
+.cc-profile-image a:hover img, .cc-profile-image a:hover video {
+    -webkit-transform: scale(1.06, 1.06);
+    transform: scale(1.06, 1.06);
 }
 
 .cc-profile-image a:hover:before {
@@ -7182,9 +7215,9 @@ Created using IcoMoon - icomoon.io
   padding: 40px;
 }
 
-.cc-reference img {
-  height: 120px;
-  width: auto;
+.cc-reference img, .cc-reference video {
+    height: 120px;
+    width: auto;
 }
 
 .cc-reference .h5 {
