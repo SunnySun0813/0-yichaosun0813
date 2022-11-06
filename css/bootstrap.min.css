@@ -111,6 +111,11 @@ body {
     outline: 0!important
 }
 
+.self {
+
+    margin-bottom: 20px;
+}
+
 hr {
     box-sizing: content-box;
     height: 0;
